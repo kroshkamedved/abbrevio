@@ -27,4 +27,6 @@ public class MoleculeController {
         return ResponseEntity.status(HttpStatus.OK).body(responseMolecule);
     }
 
+    //TODO implement possibility for adding new abbreviations to the db.
+
 }
