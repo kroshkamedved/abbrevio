@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE CDXML SYSTEM "http://www.cambridgesoft.com/xml/cdxml.dtd">
+<CDXML
+        CreationProgram="ChemDraw JS 2.0.0.9"
+        Name="ACS Document 1996"
+        BoundingBox="402.56 123.92 672.77 167.41"
+        WindowPosition="0 0"
+        WindowSize="0 0"
+        FractionalWidths="yes"
+        InterpretChemically="yes"
+        ShowAtomQuery="yes"
+        ShowAtomStereo="no"
+        ShowAtomEnhancedStereo="yes"
+        ShowAtomNumber="no"
+        ShowResidueID="no"
+        ShowBondQuery="yes"
+        ShowBondRxn="yes"
+        ShowBondStereo="no"
+        ShowTerminalCarbonLabels="no"
+        ShowNonTerminalCarbonLabels="no"
+        HideImplicitHydrogens="no"
+        Magnification="666"
+        LabelFont="24"
+        LabelSize="10"
+        LabelFace="96"
+        CaptionFont="24"
+        CaptionSize="10"
+        HashSpacing="2.50"
+        MarginWidth="1.60"
+        LineWidth="0.60"
+        BoldWidth="2"
+        BondLength="14.40"
+        BondSpacing="18"
+        ChainAngle="120"
+        LabelJustification="Auto"
+        CaptionJustification="Left"
+        AminoAcidTermini="HOH"
+        ShowSequenceTermini="yes"
+        ShowSequenceBonds="yes"
+        ShowSequenceUnlinkedBranches="no"
+        ResidueWrapCount="40"
+        ResidueBlockCount="10"
+        ResidueZigZag="yes"
+        NumberResidueBlocks="no"
+        PrintMargins="36 36 36 36"
+        MacPrintInfo="0003000001200120000000000B6608A0FF84FF880BE309180367052703FC0002000001200120000000000B6608A0000100000064000000010001010100000001270F000100010000000000000000000000000002001901900000000000400000000000000000000100000000000000000000000000000000"
+        ChemPropName=""
+        ChemPropFormula="Chemical Formula: "
+        ChemPropExactMass="Exact Mass: "
+        ChemPropMolWt="Molecular Weight: "
+        ChemPropMOverZ="m/z: "
+        ChemPropAnalysis="Elemental Analysis: "
+        ChemPropBoilingPt="Boiling Point: "
+        ChemPropMeltingPt="Melting Point: "
+        ChemPropCritTemp="Critical Temp: "
+        ChemPropCritPres="Critical Pres: "
+        ChemPropCritVol="Critical Vol: "
+        ChemPropGibbs="Gibbs Energy: "
+        ChemPropLogP="Log P: "
+        ChemPropMR="MR: "
+        ChemPropHenry="Henry's Law: "
+        ChemPropEForm="Heat of Form: "
+        ChemProptPSA="tPSA: "
+        ChemPropID=""
+        ChemPropFragmentLabel=""
+        color="0"
+        bgcolor="1"
+        RxnAutonumberStart="1"
+        RxnAutonumberConditions="no"
+        RxnAutonumberStyle="Roman"
+        RxnAutonumberFormat="(#)"
+>
+    <colortable>
+        <color r="1" g="1" b="1"/>
+        <color r="0" g="0" b="0"/>
+        <color r="1" g="0" b="0"/>
+        <color r="1" g="1" b="0"/>
+        <color r="0" g="1" b="0"/>
+        <color r="0" g="1" b="1"/>
+        <color r="0" g="0" b="1"/>
+        <color r="1" g="0" b="1"/>
+    </colortable>
+    <fonttable>
+        <font id="24" charset="utf-8" name="Arial"/>
+    </fonttable>
+    <page
+            id="75"
+            BoundingBox="0 0 935.33 458"
+            Width="935.33"
+            Height="458"
+            HeaderPosition="36"
+            FooterPosition="36"
+            PageOverlap="0"
+            PrintTrimMarks="yes"
+            HeightPages="1"
+            WidthPages="1"
+            DrawingSpace="poster"
+    >
+        <fragment id="10" BoundingBox="402.56 137.92 428.10 167.41" Z="4">
+            <n id="7" p="402.86 145.47" Z="1" AS="N"/>
+            <n
+                    id="9"
+                    p="402.86 159.87"
+                    Z="3"
+                    AS="N"/>
+            <n id="11" p="415.33 167.07" Z="5" AS="N"/>
+            <n
+                    id="13"
+                    p="427.80 159.87"
+                    Z="7"
+                    AS="N"/>
+            <n id="15" p="427.80 145.47" Z="9" AS="N"/>
+            <n
+                    id="17"
+                    p="415.33 138.27"
+                    Z="11"
+                    AS="N"/>
+            <b
+                    id="19"
+                    Z="13"
+                    B="7"
+                    E="9"
+                    Order="2"
+                    BS="N"
+                    BondCircularOrdering="24 0 0 20"/>
+            <b
+                    id="20"
+                    Z="14"
+                    B="9"
+                    E="11"
+                    BS="N"/>
+            <b
+                    id="21"
+                    Z="15"
+                    B="11"
+                    E="13"
+                    Order="2"
+                    BS="N"
+                    BondCircularOrdering="20 0 0 22"/>
+            <b
+                    id="22"
+                    Z="16"
+                    B="13"
+                    E="15"
+                    BS="N"/>
+            <b
+                    id="23"
+                    Z="17"
+                    B="15"
+                    E="17"
+                    Order="2"
+                    BS="N"
+                    BondCircularOrdering="22 0 0 24"/>
+            <b
+                    id="24"
+                    Z="18"
+                    B="17"
+                    E="7"
+                    BS="N"/>
+        </fragment>
+        <fragment id="29" BoundingBox="647.23 123.92 672.77 153.41" Z="23">
+            <n id="26" p="647.53 131.47" Z="20" AS="N"/>
+            <n
+                    id="28"
+                    p="647.53 145.87"
+                    Z="22"
+                    AS="N"/>
+            <n id="30" p="660 153.07" Z="24" AS="N"/>
+            <n
+                    id="32"
+                    p="672.47 145.87"
+                    Z="26"
+                    AS="N"/>
+            <n id="34" p="672.47 131.47" Z="28" AS="N"/>
+            <n
+                    id="36"
+                    p="660 124.27"
+                    Z="30"
+                    AS="N"/>
+            <b id="38" Z="32" B="26" E="28" BS="N"/>
+            <b
+                    id="39"
+                    Z="33"
+                    B="28"
+                    E="30"
+                    BS="N"/>
+            <b id="40" Z="34" B="30" E="32" BS="N"/>
+            <b
+                    id="41"
+                    Z="35"
+                    B="32"
+                    E="34"
+                    BS="N"/>
+            <b id="42" Z="36" B="34" E="36" BS="N"/>
+            <b
+                    id="43"
+                    Z="37"
+                    B="36"
+                    E="26"
+                    BS="N"/>
+        </fragment>
+        <fragment id="52" BoundingBox="440.08 132.16 472.26 165.17" Z="46">
+            <n id="49" p="440.38 141.47" Z="43" AS="N"/>
+            <n
+                    id="51"
+                    p="440.38 155.87"
+                    Z="45"
+                    AS="N"/>
+            <n id="53" p="451.64 164.84" Z="47" AS="N"/>
+            <n
+                    id="55"
+                    p="465.68 161.64"
+                    Z="49"
+                    AS="N"/>
+            <n id="57" p="471.93 148.67" Z="51" AS="N"/>
+            <n
+                    id="59"
+                    p="465.68 135.69"
+                    Z="53"
+                    AS="N"/>
+            <n id="61" p="451.64 132.49" Z="55" AS="N"/>
+            <b
+                    id="63"
+                    Z="57"
+                    B="49"
+                    E="51"
+                    BS="N"/>
+            <b id="64" Z="58" B="51" E="53" BS="N"/>
+            <b
+                    id="65"
+                    Z="59"
+                    B="53"
+                    E="55"
+                    BS="N"/>
+            <b id="66" Z="60" B="55" E="57" BS="N"/>
+            <b
+                    id="67"
+                    Z="61"
+                    B="57"
+                    E="59"
+                    BS="N"/>
+            <b id="68" Z="62" B="59" E="61" BS="N"/>
+            <b
+                    id="69"
+                    Z="63"
+                    B="61"
+                    E="49"
+                    BS="N"/>
+        </fragment>
+        <fragment id="72" BoundingBox="528 152.03 550.23 163.70" Z="66"
+        >
+            <n
+                    id="71"
+                    p="531.33 157.06"
+                    Z="65"
+                    NodeType="Fragment"
+                    NeedsClean="yes"
+                    AS="N"
+            >
+                <fragment id="76"
+                >
+                    <n id="77" p="396.83 -9.15"/>
+                    <n id="78" p="384.41 -1.98"/>
+                    <n
+                            id="79"
+                            p="347.13 -9.15"/>
+                    <n id="80" p="359.55 -1.98"/>
+                    <n
+                            id="81"
+                            p="359.55 -30.68"/>
+                    <n id="82" p="371.98 -23.50"/>
+                    <n
+                            id="83"
+                            p="371.98 -9.15"
+                            Element="7"
+                            NumHydrogens="0"/>
+                    <b id="84" B="82" E="83"/>
+                    <b
+                            id="85"
+                            B="81"
+                            E="82"/>
+                    <b id="86" B="80" E="83"/>
+                    <b id="87" B="79" E="80"/>
+                    <b
+                            id="88"
+                            B="78"
+                            E="83"/>
+                    <b id="89" B="77" E="78"/>
+                </fragment>
+                <t
+                        id="70"
+                        p="528 160.67"
+                        BoundingBox="528 152.03 550.23 163.70"
+                        Z="64"
+                        LabelJustification="Left"
+                        LabelLineHeight="auto"
+                        LineHeight="auto"
+                        LabelAlignment="Left"
+                >
+                    <s font="24" size="9.95" color="0">Et3N</s>
+                </t
+                >
+            </n
+            >
+        </fragment>
+        <t
+                id="44"
+                p="494 132.67"
+                BoundingBox="494 124.03 524.01 135.70"
+                Z="38"
+                Warning="Chemical Interpretation is not possible for this label"
+                LineHeight="auto"
+        >
+            <s font="24" size="9.95" color="0">DIPEA</s>
+        </t
+        >
+        <t
+                id="47"
+                p="431.33 153.33"
+                BoundingBox="431.33 145.83 437.17 157.50"
+                Z="41"
+                Warning="Chemical Interpretation is not possible for this label"
+                LineHeight="auto"
+        >
+            <s font="24" size="9.95" color="0">+</s>
+        </t
+        >
+        <graphic
+                id="25"
+                SupersededBy="91"
+                BoundingBox="618.75 149.33 494 149.33"
+                Z="19"
+                GraphicType="Line"
+                ArrowType="FullHead"
+                HeadSize="2250"/>
+        <scheme id="92">
+            <step
+                    id="93"
+                    ReactionStepReactants="10 52"
+                    ReactionStepProducts="29"
+                    ReactionStepArrows="25"
+                    ReactionStepObjectsAboveArrow="44"
+                    ReactionStepObjectsBelowArrow="72"/>
+        </scheme
+        >
+        <arrow
+                id="91"
+                BoundingBox="494 145.29 618.75 152.71"
+                Z="19"
+                FillType="None"
+                ArrowheadHead="Full"
+                ArrowheadType="Solid"
+                HeadSize="2250"
+                ArrowheadCenterSize="1969"
+                ArrowheadWidth="563"
+                Head3D="618.75 149.33 0"
+                Tail3D="494 149.33 0"
+                Center3D="852.42 225.33 0"
+                MajorAxisEnd3D="977.17 225.33 0"
+                MinorAxisEnd3D="852.42 350.09 0"/>
+    </page>
+</CDXML>
