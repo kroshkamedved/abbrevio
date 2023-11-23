@@ -8,9 +8,14 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import org.springframework.stereotype.Service;
 
-@Data
+@Getter
+@Setter
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
@@ -27,10 +32,4 @@ public class Molecule {
     private Double em;
     private String inchi;
     private String smiles;
-
-    public static Molecule getUnrecognized() {
-        Molecule mol = new Molecule();
-        mol.setName("UNRECOGNIZED");
-        return mol;
-    }
 }

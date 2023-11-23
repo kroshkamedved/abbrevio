@@ -18,7 +18,7 @@ import java.util.List;
 @ActiveProfiles("test")
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application-test.properties")
-public class XMLParserServiceIntegrationTest {
+public class XMLParserServiceTest {
     @Autowired
     private XMLParserService parserService;
 
@@ -33,7 +33,7 @@ public class XMLParserServiceIntegrationTest {
         long mismatchQuantity = expectedList.stream()
                 .filter(el -> !(parseResult.contains(el)))
                 .count();
-
+        Assertions.assertIterableEquals(expectedList,parseResult);
         Assertions.assertEquals(mismatchQuantity, 0l);
         Assertions.assertEquals(expectedList.size(), parseResult.size());
     }
