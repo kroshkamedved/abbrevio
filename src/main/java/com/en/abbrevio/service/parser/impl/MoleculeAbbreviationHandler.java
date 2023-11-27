@@ -1,20 +1,18 @@
 package com.en.abbrevio.service.parser.impl;
 
-import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
-import org.yaml.snakeyaml.util.EnumUtils;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Objects;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 @Component
 @Getter
@@ -23,20 +21,15 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
 
     private static final String TARGET_TAG_NAME = "s";
     private static final String PARENT_TARGET_TAG_NAME = "t";
-    private static final String PARENT_ATTRIBUTE = "Warning";
-    private static final String PARENT_ATTRIBUTE_VALUE = "Chemical Interpretation is not possible for this label";
     private static final String TARGET_ATTRIBUTE = "BoundingBox";
+    private static final String REGEX = "\\s*\\+\\s*|t\\s*=\\s*\\d";
+    private static final Pattern pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE);
 
     private boolean parentTag;
     private boolean targetTag;
 
     private Map<BoundingBox, String> abbreviations;
-    private List<String> exclusions;
     private BoundingBox currentElementBoundingBox;
-
-    public MoleculeAbbreviationHandler() {
-        exclusions = Arrays.asList("+");
-    }
 
     @Override
     public void startDocument() throws SAXException {
@@ -46,9 +39,7 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         if (qName.equals(PARENT_TARGET_TAG_NAME)) {
-            String warning = attributes.getValue(PARENT_ATTRIBUTE);
-            parentTag = Objects.equals(warning, PARENT_ATTRIBUTE_VALUE);
-
+            parentTag = true;
             String boundingBox = attributes.getValue(TARGET_ATTRIBUTE);
             if (boundingBox != null) {
                 currentElementBoundingBox = BoundingBox.createFromString(boundingBox);
@@ -71,8 +62,9 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
     @Override
     public void characters(char[] ch, int start, int length) throws SAXException {
         String content = new String(ch, start, length);
-        if (isTargetTag() && !(exclusions.contains(content))) {
-            abbreviations.put( currentElementBoundingBox,content);
+        Matcher matcher = pattern.matcher(content);
+        if (isTargetTag() && !(matcher.find())) {
+            abbreviations.put(currentElementBoundingBox, content);
         }
     }
 }

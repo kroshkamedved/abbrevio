@@ -51,7 +51,7 @@ public class XMLParserService implements ParserService {
                     } else if (index < stepArrowBounds.size() - 1) {
                         reactionSteps.add(groupByPositionForMiddleStep(current, abbreviations, reactionSteps, index - 1));
                     } else {
-                        reactionSteps.add(groupByPositionForLastStep(current, abbreviations, index, reactionSteps));
+                        reactionSteps.add(groupByPositionForLastStep(current, abbreviations, index-1, reactionSteps));
                     }
                     index++;
                 }
