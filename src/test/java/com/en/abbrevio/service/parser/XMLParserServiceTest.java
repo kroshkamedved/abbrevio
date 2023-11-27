@@ -29,7 +29,6 @@ import java.util.List;
 
 @ActiveProfiles("test")
 @ContextConfiguration(classes = XMLParserTestCofiguration.class)
-//@Import(XMLParserTestCofiguration.class)
 @ExtendWith(SpringExtension.class)
 @TestPropertySource(locations = "classpath:application-test.properties")
 public class XMLParserServiceTest {

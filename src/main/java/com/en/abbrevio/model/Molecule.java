@@ -7,6 +7,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -18,6 +19,7 @@ import org.springframework.stereotype.Service;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Molecule {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -69,617 +69,490 @@
         RxnAutonumberConditions="no"
         RxnAutonumberStyle="Roman"
         RxnAutonumberFormat="(#)"
->
-    <colortable>
-        <color r="1" g="1" b="1"/>
-        <color r="0" g="0" b="0"/>
-        <color r="1" g="0" b="0"/>
-        <color r="1" g="1" b="0"/>
-        <color r="0" g="1" b="0"/>
-        <color r="0" g="1" b="1"/>
-        <color r="0" g="0" b="1"/>
-        <color r="1" g="0" b="1"/>
-    </colortable>
-    <fonttable>
-        <font id="24" charset="utf-8" name="Arial"/>
-    </fonttable>
-    <page
-            id="74"
-            BoundingBox="0 0 935.33 458"
-            Width="935.33"
-            Height="458"
-            HeaderPosition="36"
-            FooterPosition="36"
-            PageOverlap="0"
-            PrintTrimMarks="yes"
-            HeightPages="1"
-            WidthPages="1"
-            DrawingSpace="poster"
-    >
-        <fragment
-                id="10"
-                BoundingBox="205.54 134.28 218.91 149.72"
-                Z="4"
-        >
-            <n
-                    id="7"
-                    p="205.84 134.80"
-                    Z="1"
-                    AS="N"
-            />
-            <n
-                    id="9"
-                    p="205.84 149.20"
-                    Z="3"
-                    AS="N"
-            />
-            <n
-                    id="11"
-                    p="218.31 142"
-                    Z="5"
-                    AS="N"
-            />
-            <b
-                    id="13"
-                    Z="7"
-                    B="7"
-                    E="9"
-                    BS="N"
-            />
-            <b
-                    id="14"
-                    Z="8"
-                    B="9"
-                    E="11"
-                    BS="N"
-            />
-            <b
-                    id="15"
-                    Z="9"
-                    B="11"
-                    E="7"
-                    BS="N"
-            />
-        </fragment>
-        <fragment
-                id="19"
-                BoundingBox="318 140.03 337.44 151.70"
-                Z="13"
-        >
-            <n
-                    id="18"
-                    p="321.05 145.06"
-                    Z="12"
-                    Warning="Formula cannot be computed for queries."
-                    NodeType="Fragment"
-                    NeedsClean="yes"
-                    AS="N"
-            >
-                <fragment
-                        id="75"
-                >
-                    <n
-                            id="76"
-                            p="309.13 148.64"
-                            Element="1"
-                            NumHydrogens="0"
-                            Isotope="3"
-                    />
-                    <n
-                            id="77"
-                            p="321.55 141.47"
-                            NodeType="GenericNickname"
-                            GenericNickname="R"
-                    />
-                    <n
-                            id="78"
-                            p="333.98 148.64"
-                            Element="1"
-                            NumHydrogens="0"
-                            Isotope="3"
-                    />
-                    <b
-                            id="79"
-                            B="77"
-                            E="78"
-                    />
-                    <b
-                            id="80"
-                            B="76"
-                            E="77"
-                    />
-                </fragment>
-                <t
-                        id="17"
-                        p="318 148.67"
-                        BoundingBox="318 140.03 337.44 151.70"
-                        Z="11"
-                        LabelJustification="Left"
-                        LabelLineHeight="auto"
-                        LineHeight="auto"
-                        LabelAlignment="Left"
-                >
-                    <s font="24" size="9.95" color="0">TRT</s>
-                </t>
-            </n>
-        </fragment>
-        <fragment
-                id="26"
-                BoundingBox="400.67 164.03 414.01 175.70"
-                Z="20"
-        >
-            <n
-                    id="25"
-                    p="404 169.06"
-                    Z="19"
-                    NodeType="Fragment"
-                    NeedsClean="yes"
-                    AS="N"
-            >
-                <fragment
-                        id="82"
-                >
-                    <n
-                            id="83"
-                            p="397.08 169.06"
-                            NodeType="GenericNickname"
-                            GenericNickname="A"
-                    />
-                    <n
-                            id="84"
-                            p="411.43 169.06"
-                            NodeType="GenericNickname"
-                            GenericNickname="A"
-                    />
-                    <b
-                            id="85"
-                            B="83"
-                            E="84"
-                    />
-                </fragment>
-                <t
-                        id="24"
-                        p="400.67 172.67"
-                        BoundingBox="400.67 164.03 414.01 175.70"
-                        Z="18"
-                        LabelJustification="Left"
-                        LabelLineHeight="auto"
-                        LineHeight="auto"
-                        LabelAlignment="Left"
-                >
-                    <s font="24" size="9.95" color="0">AA</s>
-                </t>
-            </n>
-        </fragment>
-        <fragment
-                id="31"
-                BoundingBox="521.54 128.28 534.91 143.72"
-                Z="25"
-        >
-            <n
-                    id="28"
-                    p="521.84 128.80"
-                    Z="22"
-                    AS="N"
-            />
-            <n
-                    id="30"
-                    p="521.84 143.20"
-                    Z="24"
-                    AS="N"
-            />
-            <n
-                    id="32"
-                    p="534.31 136"
-                    Z="26"
-                    AS="N"
-            />
-            <b
-                    id="34"
-                    Z="28"
-                    B="28"
-                    E="30"
-                    BS="N"
-            />
-            <b
-                    id="35"
-                    Z="29"
-                    B="30"
-                    E="32"
-                    BS="N"
-            />
-            <b
-                    id="36"
-                    Z="30"
-                    B="32"
-                    E="28"
-                    BS="N"
-            />
-        </fragment>
-        <fragment
-                id="42"
-                BoundingBox="551.33 128.03 572.44 139.70"
-                Z="36"
-        >
-            <n
-                    id="41"
-                    p="554.39 133.06"
-                    Z="35"
-                    NodeType="Fragment"
-                    NeedsClean="yes"
-                    AS="N"
-            >
-                <fragment
-                        id="87"
-                >
-                    <n
-                            id="88"
-                            p="567.31 136.64"
-                            Element="9"
-                            NumHydrogens="0"
-                    />
-                    <n
-                            id="89"
-                            p="554.89 129.47"
-                            NodeType="GenericNickname"
-                            GenericNickname="R"
-                    />
-                    <n
-                            id="90"
-                            p="542.46 136.64"
-                            NodeType="GenericNickname"
-                            GenericNickname="G"
-                    />
-                    <b
-                            id="91"
-                            B="89"
-                            E="90"
-                    />
-                    <b
-                            id="92"
-                            B="88"
-                            E="89"
-                    />
-                </fragment>
-                <t
-                        id="40"
-                        p="551.33 136.67"
-                        BoundingBox="551.33 128.03 572.44 139.70"
-                        Z="34"
-                        LabelJustification="Left"
-                        LabelLineHeight="auto"
-                        LineHeight="auto"
-                        LabelAlignment="Left"
-                >
-                    <s font="24" size="9.95" color="0">FRG</s>
-                </t>
-            </n>
-        </fragment>
-        <fragment
-                id="45"
-                BoundingBox="610.67 120.03 624.01 131.70"
-                Z="39"
-        >
-            <n
-                    id="44"
-                    p="614 125.06"
-                    Z="38"
-                    NodeType="Fragment"
-                    NeedsClean="yes"
-                    AS="N"
-            >
-                <fragment
-                        id="94"
-                >
-                    <n
-                            id="95"
-                            p="607.08 125.06"
-                            NodeType="GenericNickname"
-                            GenericNickname="A"
-                    />
-                    <n
-                            id="96"
-                            p="621.43 125.06"
-                            NodeType="GenericNickname"
-                            GenericNickname="A"
-                    />
-                    <b
-                            id="97"
-                            B="95"
-                            E="96"
-                    />
-                </fragment>
-                <t
-                        id="43"
-                        p="610.67 128.67"
-                        BoundingBox="610.67 120.03 624.01 131.70"
-                        Z="37"
-                        LabelJustification="Left"
-                        LabelLineHeight="auto"
-                        LineHeight="auto"
-                        LabelAlignment="Left"
-                >
-                    <s font="24" size="9.95" color="0">AA</s>
-                </t>
-            </n>
-        </fragment>
-        <fragment
-                id="50"
-                BoundingBox="711.90 128.59 737.44 158.08"
-                Z="44"
-        >
-            <n
-                    id="47"
-                    p="712.20 136.13"
-                    Z="41"
-                    AS="N"
-            />
-            <n
-                    id="49"
-                    p="712.20 150.53"
-                    Z="43"
-                    AS="N"
-            />
-            <n
-                    id="51"
-                    p="724.67 157.73"
-                    Z="45"
-                    AS="N"
-            />
-            <n
-                    id="53"
-                    p="737.14 150.53"
-                    Z="47"
-                    AS="N"
-            />
-            <n
-                    id="55"
-                    p="737.14 136.13"
-                    Z="49"
-                    AS="N"
-            />
-            <n
-                    id="57"
-                    p="724.67 128.93"
-                    Z="51"
-                    AS="N"
-            />
-            <b
-                    id="59"
-                    Z="53"
-                    B="47"
-                    E="49"
-                    Order="2"
-                    BS="N"
-                    BondCircularOrdering="64 0 0 60"
-            />
-            <b
-                    id="60"
-                    Z="54"
-                    B="49"
-                    E="51"
-                    BS="N"
-            />
-            <b
-                    id="61"
-                    Z="55"
-                    B="51"
-                    E="53"
-                    Order="2"
-                    BS="N"
-                    BondCircularOrdering="60 0 0 62"
-            />
-            <b
-                    id="62"
-                    Z="56"
-                    B="53"
-                    E="55"
-                    BS="N"
-            />
-            <b
-                    id="63"
-                    Z="57"
-                    B="55"
-                    E="57"
-                    Order="2"
-                    BS="N"
-                    BondCircularOrdering="62 0 0 64"
-            />
-            <b
-                    id="64"
-                    Z="58"
-                    B="57"
-                    E="47"
-                    BS="N"
-            />
-        </fragment>
-        <fragment
-                id="67"
-                BoundingBox="541.20 142.70 562.31 154.37"
-                Z="61"
-        >
-            <n
-                    id="66"
-                    p="544.25 147.72"
-                    Z="60"
-                    NodeType="Fragment"
-                    NeedsClean="yes"
-                    AS="N"
-            >
-                <fragment
-                        id="99"
-                >
-                    <n
-                            id="100"
-                            p="557.18 151.31"
-                            Element="9"
-                            NumHydrogens="0"
-                    />
-                    <n
-                            id="101"
-                            p="544.75 144.13"
-                            NodeType="GenericNickname"
-                            GenericNickname="G"
-                    />
-                    <n
-                            id="102"
-                            p="532.33 151.31"
-                            NodeType="GenericNickname"
-                            GenericNickname="R"
-                    />
-                    <b
-                            id="103"
-                            B="101"
-                            E="102"
-                    />
-                    <b
-                            id="104"
-                            B="100"
-                            E="101"
-                    />
-                </fragment>
-                <t
-                        id="65"
-                        p="541.20 151.33"
-                        BoundingBox="541.20 142.70 562.31 154.37"
-                        Z="59"
-                        LabelJustification="Left"
-                        LabelLineHeight="auto"
-                        LineHeight="auto"
-                        LabelAlignment="Left"
-                >
-                    <s font="24" size="9.95" color="0">FGR</s>
-                </t>
-            </n>
-        </fragment>
-        <t
-                id="16"
-                p="246 140.67"
-                BoundingBox="246 133.17 251.84 144.83"
-                Z="10"
-                Warning="Chemical Interpretation is not possible for this label"
-                LineHeight="auto"
-        >
-            <s font="24" size="9.95" color="0">+</s>
-        </t>
-        <t
-                id="22"
-                p="390 126.67"
-                BoundingBox="390 118.03 420.01 129.70"
-                Z="16"
-                Warning="Chemical Interpretation is not possible for this label"
-                LineHeight="auto"
-        >
-            <s font="24" size="9.95" color="0">DIPEA</s>
-        </t>
-        <t
-                id="38"
-                p="538.67 139.33"
-                BoundingBox="538.67 131.83 544.51 143.50"
-                Z="32"
-                Warning="Chemical Interpretation is not possible for this label"
-                LineHeight="auto"
-        >
-            <s font="24" size="10" color="0">+</s>
-        </t>
-        <t
-                id="69"
-                p="349.33 120.67"
-                BoundingBox="349.33 112.03 369.07 123.70"
-                Z="63"
-                Warning="Chemical Interpretation is not possible for this label"
-                LineHeight="auto"
-        >
-            <s font="24" size="9.95" color="0">t=2h</s>
-        </t>
-        <t
-                id="70"
-                p="575.33 118.67"
-                BoundingBox="575.33 110.03 611.18 121.70"
-                Z="64"
-                Warning="Chemical Interpretation is not possible for this label"
-                LineHeight="auto"
-        >
-            <s font="24" size="9.95" color="0">T = 60C</s>
-        </t>
-        <t
-                id="71"
-                p="574.67 98"
-                BoundingBox="574.67 89.31 597.19 100.97"
-                Z="65"
-                Warning="Chemical Interpretation is not possible for this label"
-                LineHeight="auto"
-        >
-            <s font="24" size="9.95" color="0">p=2h</s>
-        </t>
-        <graphic
-                id="21"
-                SupersededBy="106"
-                BoundingBox="499.33 137.33 354.67 137.33"
-                Z="15"
-                GraphicType="Line"
-                ArrowType="FullHead"
-                HeadSize="2250"
-        />
-        <graphic
-                id="37"
-                SupersededBy="107"
-                BoundingBox="688.15 136 564.67 136"
-                Z="31"
-                GraphicType="Line"
-                ArrowType="FullHead"
-                HeadSize="2250"
-        />
-        <scheme
-                id="108"
-        >
-            <step
-                    id="109"
-                    ReactionStepReactants="10 19"
-                    ReactionStepProducts="31 67 42"
-                    ReactionStepArrows="21"
-                    ReactionStepObjectsAboveArrow="22 69"
-                    ReactionStepObjectsBelowArrow="26"
-            />
-            <step
-                    id="110"
-                    ReactionStepReactants="31 67 42"
-                    ReactionStepProducts="50"
-                    ReactionStepArrows="37"
-                    ReactionStepObjectsAboveArrow="45 70 71"
-            />
-        </scheme>
-        <arrow
-                id="106"
-                BoundingBox="354.67 133.29 499.33 140.71"
-                Z="15"
-                FillType="None"
-                ArrowheadHead="Full"
-                ArrowheadType="Solid"
-                HeadSize="2250"
-                ArrowheadCenterSize="1969"
-                ArrowheadWidth="563"
-                Head3D="499.33 137.33 0"
-                Tail3D="354.67 137.33 0"
-                Center3D="676.67 206 0"
-                MajorAxisEnd3D="821.33 206 0"
-                MinorAxisEnd3D="676.67 350.67 0"
-        />
-        <arrow
-                id="107"
-                BoundingBox="564.67 131.95 688.15 139.38"
-                Z="31"
-                FillType="None"
-                ArrowheadHead="Full"
-                ArrowheadType="Solid"
-                HeadSize="2250"
-                ArrowheadCenterSize="1969"
-                ArrowheadWidth="563"
-                Head3D="688.15 136 0"
-                Tail3D="564.67 136 0"
-                Center3D="970.48 204 0"
-                MajorAxisEnd3D="1093.96 204 0"
-                MinorAxisEnd3D="970.48 327.48 0"
-        />
-    </page>
-</CDXML>
+><colortable>
+    <color r="1" g="1" b="1"/>
+    <color r="0" g="0" b="0"/>
+    <color r="1" g="0" b="0"/>
+    <color r="1" g="1" b="0"/>
+    <color r="0" g="1" b="0"/>
+    <color r="0" g="1" b="1"/>
+    <color r="0" g="0" b="1"/>
+    <color r="1" g="0" b="1"/>
+</colortable><fonttable>
+    <font id="24" charset="utf-8" name="Arial"/>
+</fonttable><page
+        id="74"
+        BoundingBox="0 0 935.33 458"
+        Width="935.33"
+        Height="458"
+        HeaderPosition="36"
+        FooterPosition="36"
+        PageOverlap="0"
+        PrintTrimMarks="yes"
+        HeightPages="1"
+        WidthPages="1"
+        DrawingSpace="poster"
+><fragment
+        id="10"
+        BoundingBox="205.54 134.28 218.91 149.72"
+        Z="4"
+><n
+        id="7"
+        p="205.84 134.80"
+        Z="1"
+        AS="N"
+/><n
+        id="9"
+        p="205.84 149.20"
+        Z="3"
+        AS="N"
+/><n
+        id="11"
+        p="218.31 142"
+        Z="5"
+        AS="N"
+/><b
+        id="13"
+        Z="7"
+        B="7"
+        E="9"
+        BS="N"
+/><b
+        id="14"
+        Z="8"
+        B="9"
+        E="11"
+        BS="N"
+/><b
+        id="15"
+        Z="9"
+        B="11"
+        E="7"
+        BS="N"
+/></fragment><fragment
+        id="19"
+        BoundingBox="318 140.03 337.44 151.70"
+        Z="13"
+><n
+        id="18"
+        p="321.05 145.06"
+        Z="12"
+        Warning="Formula cannot be computed for queries."
+        NodeType="Fragment"
+        NeedsClean="yes"
+        AS="N"
+><fragment
+        id="75"
+><n
+        id="76"
+        p="309.13 148.64"
+        Element="1"
+        NumHydrogens="0"
+        Isotope="3"
+/><n
+        id="77"
+        p="321.55 141.47"
+        NodeType="GenericNickname"
+        GenericNickname="R"
+/><n
+        id="78"
+        p="333.98 148.64"
+        Element="1"
+        NumHydrogens="0"
+        Isotope="3"
+/><b
+        id="79"
+        B="77"
+        E="78"
+/><b
+        id="80"
+        B="76"
+        E="77"
+/></fragment><t
+        id="17"
+        p="318 148.67"
+        BoundingBox="318 140.03 337.44 151.70"
+        Z="11"
+        LabelJustification="Left"
+        LabelLineHeight="auto"
+        LineHeight="auto"
+        LabelAlignment="Left"
+><s font="24" size="9.95" color="0">TRT</s></t></n></fragment><fragment
+        id="26"
+        BoundingBox="400.67 164.03 414.01 175.70"
+        Z="20"
+><n
+        id="25"
+        p="404 169.06"
+        Z="19"
+        NodeType="Fragment"
+        NeedsClean="yes"
+        AS="N"
+><fragment
+        id="82"
+><n
+        id="83"
+        p="397.08 169.06"
+        NodeType="GenericNickname"
+        GenericNickname="A"
+/><n
+        id="84"
+        p="411.43 169.06"
+        NodeType="GenericNickname"
+        GenericNickname="A"
+/><b
+        id="85"
+        B="83"
+        E="84"
+/></fragment><t
+        id="24"
+        p="400.67 172.67"
+        BoundingBox="400.67 164.03 414.01 175.70"
+        Z="18"
+        LabelJustification="Left"
+        LabelLineHeight="auto"
+        LineHeight="auto"
+        LabelAlignment="Left"
+><s font="24" size="9.95" color="0">AA</s></t></n></fragment><fragment
+        id="31"
+        BoundingBox="521.54 128.28 534.91 143.72"
+        Z="25"
+><n
+        id="28"
+        p="521.84 128.80"
+        Z="22"
+        AS="N"
+/><n
+        id="30"
+        p="521.84 143.20"
+        Z="24"
+        AS="N"
+/><n
+        id="32"
+        p="534.31 136"
+        Z="26"
+        AS="N"
+/><b
+        id="34"
+        Z="28"
+        B="28"
+        E="30"
+        BS="N"
+/><b
+        id="35"
+        Z="29"
+        B="30"
+        E="32"
+        BS="N"
+/><b
+        id="36"
+        Z="30"
+        B="32"
+        E="28"
+        BS="N"
+/></fragment><fragment
+        id="42"
+        BoundingBox="551.33 128.03 572.44 139.70"
+        Z="36"
+><n
+        id="41"
+        p="554.39 133.06"
+        Z="35"
+        NodeType="Fragment"
+        NeedsClean="yes"
+        AS="N"
+><fragment
+        id="87"
+><n
+        id="88"
+        p="567.31 136.64"
+        Element="9"
+        NumHydrogens="0"
+/><n
+        id="89"
+        p="554.89 129.47"
+        NodeType="GenericNickname"
+        GenericNickname="R"
+/><n
+        id="90"
+        p="542.46 136.64"
+        NodeType="GenericNickname"
+        GenericNickname="G"
+/><b
+        id="91"
+        B="89"
+        E="90"
+/><b
+        id="92"
+        B="88"
+        E="89"
+/></fragment><t
+        id="40"
+        p="551.33 136.67"
+        BoundingBox="551.33 128.03 572.44 139.70"
+        Z="34"
+        LabelJustification="Left"
+        LabelLineHeight="auto"
+        LineHeight="auto"
+        LabelAlignment="Left"
+><s font="24" size="9.95" color="0">FRG</s></t></n></fragment><fragment
+        id="45"
+        BoundingBox="610.67 120.03 624.01 131.70"
+        Z="39"
+><n
+        id="44"
+        p="614 125.06"
+        Z="38"
+        NodeType="Fragment"
+        NeedsClean="yes"
+        AS="N"
+><fragment
+        id="94"
+><n
+        id="95"
+        p="607.08 125.06"
+        NodeType="GenericNickname"
+        GenericNickname="A"
+/><n
+        id="96"
+        p="621.43 125.06"
+        NodeType="GenericNickname"
+        GenericNickname="A"
+/><b
+        id="97"
+        B="95"
+        E="96"
+/></fragment><t
+        id="43"
+        p="610.67 128.67"
+        BoundingBox="610.67 120.03 624.01 131.70"
+        Z="37"
+        LabelJustification="Left"
+        LabelLineHeight="auto"
+        LineHeight="auto"
+        LabelAlignment="Left"
+><s font="24" size="9.95" color="0">AA</s></t></n></fragment><fragment
+        id="50"
+        BoundingBox="711.90 128.59 737.44 158.08"
+        Z="44"
+><n
+        id="47"
+        p="712.20 136.13"
+        Z="41"
+        AS="N"
+/><n
+        id="49"
+        p="712.20 150.53"
+        Z="43"
+        AS="N"
+/><n
+        id="51"
+        p="724.67 157.73"
+        Z="45"
+        AS="N"
+/><n
+        id="53"
+        p="737.14 150.53"
+        Z="47"
+        AS="N"
+/><n
+        id="55"
+        p="737.14 136.13"
+        Z="49"
+        AS="N"
+/><n
+        id="57"
+        p="724.67 128.93"
+        Z="51"
+        AS="N"
+/><b
+        id="59"
+        Z="53"
+        B="47"
+        E="49"
+        Order="2"
+        BS="N"
+        BondCircularOrdering="64 0 0 60"
+/><b
+        id="60"
+        Z="54"
+        B="49"
+        E="51"
+        BS="N"
+/><b
+        id="61"
+        Z="55"
+        B="51"
+        E="53"
+        Order="2"
+        BS="N"
+        BondCircularOrdering="60 0 0 62"
+/><b
+        id="62"
+        Z="56"
+        B="53"
+        E="55"
+        BS="N"
+/><b
+        id="63"
+        Z="57"
+        B="55"
+        E="57"
+        Order="2"
+        BS="N"
+        BondCircularOrdering="62 0 0 64"
+/><b
+        id="64"
+        Z="58"
+        B="57"
+        E="47"
+        BS="N"
+/></fragment><fragment
+        id="67"
+        BoundingBox="541.20 142.70 562.31 154.37"
+        Z="61"
+><n
+        id="66"
+        p="544.25 147.72"
+        Z="60"
+        NodeType="Fragment"
+        NeedsClean="yes"
+        AS="N"
+><fragment
+        id="99"
+><n
+        id="100"
+        p="557.18 151.31"
+        Element="9"
+        NumHydrogens="0"
+/><n
+        id="101"
+        p="544.75 144.13"
+        NodeType="GenericNickname"
+        GenericNickname="G"
+/><n
+        id="102"
+        p="532.33 151.31"
+        NodeType="GenericNickname"
+        GenericNickname="R"
+/><b
+        id="103"
+        B="101"
+        E="102"
+/><b
+        id="104"
+        B="100"
+        E="101"
+/></fragment><t
+        id="65"
+        p="541.20 151.33"
+        BoundingBox="541.20 142.70 562.31 154.37"
+        Z="59"
+        LabelJustification="Left"
+        LabelLineHeight="auto"
+        LineHeight="auto"
+        LabelAlignment="Left"
+><s font="24" size="9.95" color="0">FGR</s></t></n></fragment><t
+        id="16"
+        p="246 140.67"
+        BoundingBox="246 133.17 251.84 144.83"
+        Z="10"
+        Warning="Chemical Interpretation is not possible for this label"
+        LineHeight="auto"
+><s font="24" size="9.95" color="0">+</s></t><t
+        id="22"
+        p="390 126.67"
+        BoundingBox="390 118.03 420.01 129.70"
+        Z="16"
+        Warning="Chemical Interpretation is not possible for this label"
+        LineHeight="auto"
+><s font="24" size="9.95" color="0">DIPEA</s></t><t
+        id="38"
+        p="538.67 139.33"
+        BoundingBox="538.67 131.83 544.51 143.50"
+        Z="32"
+        Warning="Chemical Interpretation is not possible for this label"
+        LineHeight="auto"
+><s font="24" size="10" color="0">+</s></t><t
+        id="69"
+        p="349.33 120.67"
+        BoundingBox="349.33 112.03 369.07 123.70"
+        Z="63"
+        Warning="Chemical Interpretation is not possible for this label"
+        LineHeight="auto"
+><s font="24" size="9.95" color="0">t=2h</s></t><t
+        id="70"
+        p="575.33 118.67"
+        BoundingBox="575.33 110.03 611.18 121.70"
+        Z="64"
+        Warning="Chemical Interpretation is not possible for this label"
+        LineHeight="auto"
+><s font="24" size="9.95" color="0">T = 60C</s></t><t
+        id="71"
+        p="574.67 98"
+        BoundingBox="574.67 89.31 597.19 100.97"
+        Z="65"
+        Warning="Chemical Interpretation is not possible for this label"
+        LineHeight="auto"
+><s font="24" size="9.95" color="0">p=2h</s></t><graphic
+        id="21"
+        SupersededBy="106"
+        BoundingBox="499.33 137.33 354.67 137.33"
+        Z="15"
+        GraphicType="Line"
+        ArrowType="FullHead"
+        HeadSize="2250"
+/><graphic
+        id="37"
+        SupersededBy="107"
+        BoundingBox="688.15 136 564.67 136"
+        Z="31"
+        GraphicType="Line"
+        ArrowType="FullHead"
+        HeadSize="2250"
+/><scheme
+        id="108"
+><step
+        id="109"
+        ReactionStepReactants="10 19"
+        ReactionStepProducts="31 67 42"
+        ReactionStepArrows="21"
+        ReactionStepObjectsAboveArrow="22 69"
+        ReactionStepObjectsBelowArrow="26"
+/><step
+        id="110"
+        ReactionStepReactants="31 67 42"
+        ReactionStepProducts="50"
+        ReactionStepArrows="37"
+        ReactionStepObjectsAboveArrow="45 70 71"
+/></scheme><arrow
+        id="106"
+        BoundingBox="354.67 133.29 499.33 140.71"
+        Z="15"
+        FillType="None"
+        ArrowheadHead="Full"
+        ArrowheadType="Solid"
+        HeadSize="2250"
+        ArrowheadCenterSize="1969"
+        ArrowheadWidth="563"
+        Head3D="499.33 137.33 0"
+        Tail3D="354.67 137.33 0"
+        Center3D="676.67 206 0"
+        MajorAxisEnd3D="821.33 206 0"
+        MinorAxisEnd3D="676.67 350.67 0"
+/><arrow
+        id="107"
+        BoundingBox="564.67 131.95 688.15 139.38"
+        Z="31"
+        FillType="None"
+        ArrowheadHead="Full"
+        ArrowheadType="Solid"
+        HeadSize="2250"
+        ArrowheadCenterSize="1969"
+        ArrowheadWidth="563"
+        Head3D="688.15 136 0"
+        Tail3D="564.67 136 0"
+        Center3D="970.48 204 0"
+        MajorAxisEnd3D="1093.96 204 0"
+        MinorAxisEnd3D="970.48 327.48 0"
+/></page></CDXML>
