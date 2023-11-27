@@ -7,9 +7,7 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import java.util.Arrays;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -22,7 +20,7 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
     private static final String TARGET_TAG_NAME = "s";
     private static final String PARENT_TARGET_TAG_NAME = "t";
     private static final String TARGET_ATTRIBUTE = "BoundingBox";
-    private static final String REGEX = "\\s*\\+\\s*|t\\s*=\\s*\\d";
+    private static final String REGEX = "\\s*\\+\\s*|[a-zA-Z]\\s*=\\s*\\d";
     private static final Pattern pattern = Pattern.compile(REGEX, Pattern.CASE_INSENSITIVE);
 
     private boolean parentTag;

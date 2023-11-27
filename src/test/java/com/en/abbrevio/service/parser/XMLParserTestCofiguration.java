@@ -1,6 +1,7 @@
 package com.en.abbrevio.service.parser;
 
 import com.en.abbrevio.service.parser.impl.MoleculeAbbreviationHandler;
+import com.en.abbrevio.service.parser.impl.ReactionStepHandler;
 import com.en.abbrevio.service.parser.impl.XMLParserService;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
@@ -21,12 +22,17 @@ public class XMLParserTestCofiguration {
     }
 
     @Bean
+    public ReactionStepHandler reactionStepHandler() {
+        return new ReactionStepHandler();
+    }
+
+    @Bean
     public MoleculeAbbreviationHandler moleculeAbbreviationHandler() {
         return new MoleculeAbbreviationHandler();
     }
 
     @Bean
     public XMLParserService xmlParserService() throws SAXException, ParserConfigurationException {
-        return new XMLParserService(moleculeAbbreviationHandler(), saxParser());
+        return new XMLParserService(moleculeAbbreviationHandler(), reactionStepHandler(), saxParser());
     }
 }

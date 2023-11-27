@@ -1,13 +1,11 @@
 package com.en.abbrevio.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
+@Data
 public class ReactionStep<T> {
     private final List<T> reactants = new ArrayList<>();
     private final List<T> reagents = new ArrayList<>();

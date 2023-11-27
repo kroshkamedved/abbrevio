@@ -20,7 +20,7 @@ import java.util.SortedSet;
 
 @Service
 @RequiredArgsConstructor
-public class XMLParserService implements ParserService {
+public class XMLParserService implements ParserService<String> {
     private final MoleculeAbbreviationHandler moleculeAbbreviationHandler;
     private final ReactionStepHandler reactionStepHandler;
     private final SAXParser saxParser;
