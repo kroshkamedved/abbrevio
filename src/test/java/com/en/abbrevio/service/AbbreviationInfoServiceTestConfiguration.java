@@ -1,11 +1,9 @@
 package com.en.abbrevio.service;
 
-import com.en.abbrevio.model.Molecule;
-import com.en.abbrevio.repository.MoleculeRepository;
-import com.en.abbrevio.service.MoleculeService;
+import com.en.abbrevio.model.AbbreviationInfo;
+import com.en.abbrevio.repository.AbbreviationInfoRepository;
 import com.en.abbrevio.service.parser.ParserService;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.TestConfiguration;
@@ -18,15 +16,15 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 @TestConfiguration
-public class MoleculeServiceTestConfiguration {
+public class AbbreviationInfoServiceTestConfiguration {
     @Autowired
-    ParserService<String> parserService;
+    ParserService<String, String> parserService;
     @MockBean
-    MoleculeRepository moleculeRepository;
+    AbbreviationInfoRepository abbreviationInfoRepository;
 
     @Bean
-    MoleculeService moleculeService() {
-        when(moleculeRepository.getByName("AA")).thenReturn(Optional.of(Molecule.builder()
+    AbbreviationInfoService moleculeService() {
+        when(abbreviationInfoRepository.getByName("AA")).thenReturn(Optional.of(AbbreviationInfo.builder()
                 .id(2L)
                 .name("AA")
                 .em(60.05)
@@ -35,7 +33,7 @@ public class MoleculeServiceTestConfiguration {
                 .smiles("CC(O)=O")
                 .formula("C<sub>2</sub>H<sub>4</sub>O<sub>2</sub>")
                 .build()));
-        when(moleculeRepository.getByName("DIPEA")).thenReturn(Optional.of(Molecule.builder()
+        when(abbreviationInfoRepository.getByName("DIPEA")).thenReturn(Optional.of(AbbreviationInfo.builder()
                 .id(1L)
                 .name("DIPEA")
                 .em(129.1517496151)
@@ -44,7 +42,7 @@ public class MoleculeServiceTestConfiguration {
                 .smiles("CCN(C(C)C)C(C)C")
                 .formula("C<sub>8</sub>H<sub>19</sub>N")
                 .build()));
-        when(moleculeRepository.getByName("FGR")).thenReturn(Optional.of(Molecule.builder()
+        when(abbreviationInfoRepository.getByName("FGR")).thenReturn(Optional.of(AbbreviationInfo.builder()
                 .id(3L)
                 .name("FGR")
                 .em(129.1517496151)
@@ -53,6 +51,6 @@ public class MoleculeServiceTestConfiguration {
                 .smiles("\"CCN(C(C)C)C(C)C\"")
                 .formula("\"C<sub>8</sub>H<sub>19</sub>N\"")
                 .build()));
-        return new MoleculeService(parserService, moleculeRepository);
+        return new AbbreviationInfoService(parserService, abbreviationInfoRepository);
     }
 }

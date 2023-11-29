@@ -20,7 +20,7 @@ import java.util.SortedSet;
 
 @Service
 @RequiredArgsConstructor
-public class XMLParserService implements ParserService<String> {
+public class XMLParserService implements ParserService<String, String> {
     private final MoleculeAbbreviationHandler moleculeAbbreviationHandler;
     private final ReactionStepHandler reactionStepHandler;
     private final SAXParser saxParser;
@@ -51,7 +51,7 @@ public class XMLParserService implements ParserService<String> {
                     } else if (index < stepArrowBounds.size() - 1) {
                         reactionSteps.add(groupByPositionForMiddleStep(current, abbreviations, reactionSteps, index - 1));
                     } else {
-                        reactionSteps.add(groupByPositionForLastStep(current, abbreviations, index-1, reactionSteps));
+                        reactionSteps.add(groupByPositionForLastStep(current, abbreviations, index - 1, reactionSteps));
                     }
                     index++;
                 }

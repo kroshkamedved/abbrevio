@@ -19,10 +19,10 @@ import java.nio.file.Paths;
 
 @ActiveProfiles("test")
 @ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = {MoleculeServiceTestConfiguration.class, XMLParserTestCofiguration.class})
-public class MoleculeServiceTest {
+@ContextConfiguration(classes = {AbbreviationInfoServiceTestConfiguration.class, XMLParserTestCofiguration.class})
+public class AbbreviationInfoServiceTest {
     @Autowired
-    private MoleculeService moleculeService;
+    private AbbreviationInfoService abbreviationInfoService;
 
     @Test
     @SneakyThrows
@@ -31,7 +31,7 @@ public class MoleculeServiceTest {
         URL requestUrl = getClass().getClassLoader().getResource("request_body_example.xml");
         String expectedResult = Files.readString(Paths.get(responceUrl.toURI()));
         String parsingSource = Files.readString(Paths.get(requestUrl.toURI()));
-        ResponseTO responseTO = moleculeService.parseCDXML(parsingSource);
+        ResponseTO responseTO = abbreviationInfoService.parseCDXML(parsingSource);
         Gson gson = new GsonBuilder().disableHtmlEscaping().create();
         String obtainedParseResultJson = gson.toJson(responseTO);
         Assertions.assertEquals(expectedResult, obtainedParseResultJson);
