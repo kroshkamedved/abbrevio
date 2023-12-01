@@ -1,0 +1,46 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+                   xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="kroshkamedved (generated)" id="1701438558446-1">
+        <createTable tableName="abbreviation_info">
+            <column name="id" type="int">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="em" type="double"/>
+            <column name="formula" type="varchar(255)"/>
+            <column name="inchi" type="varchar(255)"/>
+            <column name="mw" type="double"/>
+            <column name="name" type="varchar(255)"/>
+            <column name="smiles" type="varchar(255)"/>
+        </createTable>
+        <insert tableName="abbreviation_info">
+            <column name="id" valueNumeric="1"/>
+            <column name="em" valueNumeric="129.1517496151"/>
+            <column name="formula" value="C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;19&lt;/sub&gt;N"/>
+            <column name="inchi" value="1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3"/>
+            <column name="mw" valueNumeric="129.2470000014"/>
+            <column name="name" value="DIPEA"/>
+            <column name="smiles" value="CCN(C(C)C)C(C)C"/>
+        </insert>
+        <insert tableName="abbreviation_info">
+            <column name="id" valueNumeric="2"/>
+            <column name="em" valueNumeric="60.05"/>
+            <column name="formula" value="C&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;4&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;"/>
+            <column name="inchi" value="1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)&#10;"/>
+            <column name="mw" valueNumeric="60.05"/>
+            <column name="name" value="AA"/>
+            <column name="smiles" value="CC(O)=O"/>
+        </insert>
+        <insert tableName="abbreviation_info">
+            <column name="id" valueNumeric="3"/>
+            <column name="em" valueNumeric="129.1517496151"/>
+            <column name="formula" value="&quot;C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;19&lt;/sub&gt;N&quot;"/>
+            <column name="inchi" value="&quot;1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3&quot;"/>
+            <column name="mw" valueNumeric="129.2470000014"/>
+            <column name="name" value="FGR"/>
+            <column name="smiles" value="&quot;CCN(C(C)C)C(C)C&quot;"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
