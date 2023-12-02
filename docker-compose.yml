@@ -1,0 +1,39 @@
+version: '3'
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - ${DB_DATA_PATH}:/var/lib/postgresql/data
+    ports:
+      - ${DB_HOST_PORT}:5432  # Adjusted host port
+
+  app:
+    image: maven:3.8.4-openjdk-17
+    volumes:
+      - ./:/app
+    ports:
+      - "1991:8080"
+    working_dir: /app
+    command: >
+      bash -c "
+      wget https://github.com/liquibase/liquibase/releases/download/v4.6.2/liquibase-4.6.2.tar.gz &&
+      tar -xzf liquibase-4.6.2.tar.gz &&
+      while ! nc -z db ${DB_HOST_PORT}; do  # Adjusted host port
+        echo 'Waiting for Postgres service to start...';
+        sleep 1;
+      done;
+      mvn clean install &&
+      java -jar target/abbrevio-0.0.1-SNAPSHOT.jar"
+    environment:
+      - DB_USERNAME=local_user
+      - DB_PASSWORD=password
+      - DB_NAME=abbrevio_db
+      - DB_DATA_PATH=${HOME}/dbDateFromDocker
+      - DB_HOST_PORT=5433  # New host port
+      - POSTGRESQL_DB_LINK=db:5432/abbrevio_db  # Adjusted host port
+    depends_on:
+      - db
