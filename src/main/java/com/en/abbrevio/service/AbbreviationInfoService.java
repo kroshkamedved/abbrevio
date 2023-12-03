@@ -14,7 +14,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class AbbreviationInfoService {
-    private final ParserService<String,String> parserService;
+    private final ParserService<String, String> parserService;
     private final AbbreviationInfoRepository molRepository;
 
     public ResponseTO parseCDXML(String xml) {
@@ -29,20 +29,16 @@ public class AbbreviationInfoService {
     }
 
     private void fullFillStep(ReactionStep<String> abbreviations, ReactionStep<AbbreviationInfo> currentStep) {
-        for (String abbr : abbreviations.getProducts()) {
+        fullfillStepPart(abbreviations.getProducts(), currentStep.getProducts(), currentStep.getUnidentifiedAbbreviation());
+        fullfillStepPart(abbreviations.getReagents(), currentStep.getReagents(), currentStep.getUnidentifiedAbbreviation());
+        fullfillStepPart(abbreviations.getReactants(), currentStep.getReactants(), currentStep.getUnidentifiedAbbreviation());
+    }
+
+    private void fullfillStepPart(List<String> abbreviations, List<AbbreviationInfo> resultList, List<String> unidentifiedAbbreviation) {
+        for (String abbr : abbreviations) {
             Optional<AbbreviationInfo> currentMolecule = molRepository.getByName(abbr.toUpperCase());
-            currentMolecule.ifPresentOrElse((mol -> currentStep.getProducts().add(mol)),
-                    () -> currentStep.getUnidentifiedAbbreviation().add(abbr));
-        }
-        for (String abbr : abbreviations.getReagents()) {
-            Optional<AbbreviationInfo> currentMolecule = molRepository.getByName(abbr.toUpperCase());
-            currentMolecule.ifPresentOrElse((mol) -> currentStep.getReagents().add(mol),
-                    () -> currentStep.getUnidentifiedAbbreviation().add(abbr));
-        }
-        for (String abbr : abbreviations.getReactants()) {
-            Optional<AbbreviationInfo> currentMolecule = molRepository.getByName(abbr.toUpperCase());
-            currentMolecule.ifPresentOrElse((mol) -> currentStep.getReactants().add(mol),
-                    () -> currentStep.getUnidentifiedAbbreviation().add(abbr));
+            currentMolecule.ifPresentOrElse(resultList::add,
+                    () -> unidentifiedAbbreviation.add(abbr));
         }
     }
 }

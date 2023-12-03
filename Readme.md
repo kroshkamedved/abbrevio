@@ -23,3 +23,11 @@ DB_HOST_PORT="<your_db_host_port>"
 DB_DOCKER_INTERNAL_PORT="<your_db_docker_internal_port>"
 POSTGRESQL_DB_LINK="<your_postgresql_db_link>"
 AbbrevioHostPort="1991"
+```
+
+## Starting the Service
+To start the service, execute the following command:
+```bash
+docker-compose up
+```
+
