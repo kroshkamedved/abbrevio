@@ -16,7 +16,7 @@ services:
     volumes:
       - ./:/app
     ports:
-      - "1991:8080"
+      - "${AbbrevioHostPort}:8080"
     working_dir: /app
     command: >
       bash -c "
@@ -27,6 +27,6 @@ services:
       mvn clean install &&
       java -jar target/abbrevio-0.0.1-SNAPSHOT.jar"
     environment:
-      - POSTGRESQL_DB_LINK=db:${DB_DOCKER_INTERNAL_PORT}/abbrevio_db
+      - POSTGRESQL_DB_LINK=db:${DB_DOCKER_INTERNAL_PORT}/${DB_NAME}
     depends_on:
       - db
