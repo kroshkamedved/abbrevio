@@ -15,14 +15,15 @@ Examples of expected requests and responses can be found in the resources of the
 
 The `.env` file should contain the following environmental variables:
 ```bash
-DB_USERNAME="<your_db_username>"
-DB_PASSWORD="<your_db_password>"
-DB_NAME="<your_db_name>"
-DB_DATA_PATH="<your_db_data_path>"
-DB_HOST_PORT="<your_db_host_port>"
-DB_DOCKER_INTERNAL_PORT="<your_db_docker_internal_port>"
-POSTGRESQL_DB_LINK="<your_postgresql_db_link>"
+DB_USERNAME="<local_user>"
+DB_PASSWORD="<password>"
+DB_NAME="<abbrevio_db>"
+DB_DATA_PATH="<${HOME}/dbDateFromDocker>"
+DB_HOST_PORT="<5433>"
+DB_DOCKER_INTERNAL_PORT="<5432>"
+POSTGRESQL_DB_LINK="localhost:${DB_DOCKER_INTERNAL_PORT}/${DB_NAME}"
 AbbrevioHostPort="1991"
+REQUEST_ORIGIN="REQUEST_ORIGIN_URL"
 ```
 
 ## Starting the Service
