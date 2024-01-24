@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.stereotype.Component;
 import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
 import java.util.HashMap;
@@ -30,13 +29,13 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
     private BoundingBox currentElementBoundingBox;
 
     @Override
-    public void startDocument() throws SAXException {
+    public void startDocument() {
         abbreviations = new HashMap<>();
     }
 
     @Override
-    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-        if (qName.equals(PARENT_TARGET_TAG_NAME)) {
+    public void startElement(String uri, String localName, String qName, Attributes attributes) {
+        if (qName.equals(PARENT_TARGET_TAG_NAME) && attributes.getValue("Warning") != null) {
             parentTag = true;
             String boundingBox = attributes.getValue(TARGET_ATTRIBUTE);
             if (boundingBox != null) {
@@ -48,7 +47,7 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
     }
 
     @Override
-    public void endElement(String uri, String localName, String qName) throws SAXException {
+    public void endElement(String uri, String localName, String qName) {
         if (targetTag && qName.equals(TARGET_TAG_NAME)) {
             targetTag = false;
             currentElementBoundingBox = null;
@@ -58,7 +57,7 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
     }
 
     @Override
-    public void characters(char[] ch, int start, int length) throws SAXException {
+    public void characters(char[] ch, int start, int length) {
         String content = new String(ch, start, length);
         Matcher matcher = pattern.matcher(content);
         if (isTargetTag() && !(matcher.find())) {
