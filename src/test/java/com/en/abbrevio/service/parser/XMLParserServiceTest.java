@@ -44,14 +44,14 @@ public class XMLParserServiceTest {
 
         ReactionStep<String> firstStep = new ReactionStep<>();
         List<String> firstStepReactants = List.of("TRT");
-        List<String> firstStepReagents = List.of("DIPEA", "AA");
-        List<String> firstStepProducts = List.of("FRG", "FGR");
+        List<String> firstStepReagents = List.of( "AA","DIPEA");
+        List<String> firstStepProducts = List.of("FGR", "FRG");
         firstStep.getReactants().addAll(firstStepReactants);
         firstStep.getReagents().addAll(firstStepReagents);
         firstStep.getProducts().addAll(firstStepProducts);
 
         ReactionStep<String> secondStep = new ReactionStep<>();
-        List<String> secondStepReactants = List.of("FRG", "FGR");
+        List<String> secondStepReactants = List.of( "FGR","FRG");
         List<String> secondStepReagents = List.of("AA");
         secondStep.getReactants().addAll(secondStepReactants);
         secondStep.getReagents().addAll(secondStepReagents);

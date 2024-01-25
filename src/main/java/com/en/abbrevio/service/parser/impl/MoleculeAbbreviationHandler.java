@@ -16,6 +16,7 @@ import java.util.regex.Pattern;
 @Setter
 public class MoleculeAbbreviationHandler extends DefaultHandler {
 
+    private static final String FRAGMENT_TAG_NAME = "fragment";
     private static final String TARGET_TAG_NAME = "s";
     private static final String PARENT_TARGET_TAG_NAME = "t";
     private static final String TARGET_ATTRIBUTE = "BoundingBox";
@@ -24,6 +25,7 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
 
     private boolean parentTag;
     private boolean targetTag;
+    private boolean fragmentTag;
 
     private Map<BoundingBox, String> abbreviations;
     private BoundingBox currentElementBoundingBox;
@@ -35,7 +37,10 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) {
-        if (qName.equals(PARENT_TARGET_TAG_NAME) && attributes.getValue("Warning") != null) {
+        if (qName.equals(FRAGMENT_TAG_NAME)) {
+            fragmentTag = true;
+        } else if (qName.equals(PARENT_TARGET_TAG_NAME) && !fragmentTag) {
+            //Error if (qName.equals(PARENT_TARGET_TAG_NAME) && attributes.getValue("Warning") != null) {
             parentTag = true;
             String boundingBox = attributes.getValue(TARGET_ATTRIBUTE);
             if (boundingBox != null) {
@@ -48,7 +53,9 @@ public class MoleculeAbbreviationHandler extends DefaultHandler {
 
     @Override
     public void endElement(String uri, String localName, String qName) {
-        if (targetTag && qName.equals(TARGET_TAG_NAME)) {
+        if (qName.equals(FRAGMENT_TAG_NAME)) {
+            fragmentTag = false;
+        } else if (targetTag && qName.equals(TARGET_TAG_NAME)) {
             targetTag = false;
             currentElementBoundingBox = null;
         } else if (parentTag && qName.equals((PARENT_TARGET_TAG_NAME))) {

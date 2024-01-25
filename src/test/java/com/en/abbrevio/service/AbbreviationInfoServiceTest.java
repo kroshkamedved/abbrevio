@@ -32,7 +32,7 @@ public class AbbreviationInfoServiceTest {
         String expectedResult = Files.readString(Paths.get(responceUrl.toURI()));
         String parsingSource = Files.readString(Paths.get(requestUrl.toURI()));
         ResponseTO responseTO = abbreviationInfoService.parseCDXML(parsingSource);
-        Gson gson = new GsonBuilder().disableHtmlEscaping().create();
+        Gson gson = new GsonBuilder().serializeNulls().disableHtmlEscaping().create();
         String obtainedParseResultJson = gson.toJson(responseTO);
         Assertions.assertEquals(expectedResult, obtainedParseResultJson);
     }

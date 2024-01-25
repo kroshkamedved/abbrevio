@@ -1,7 +1,8 @@
 package com.en.abbrevio.exception.handling;
 
 public enum ErrorCode {
-    ParsingError(40401, "Parse source not valid or another problem occur during parsing process");
+    ParsingError(40401, "Parse source not valid or another problem occur during parsing process"),
+    DuplicateRecordError(40402, " Transmitted in the request body record already present in the DB or contains fields which are already assigned to another record. Check \"name\" field");
 
     private final int errorCode;
     private final String errorMessage;

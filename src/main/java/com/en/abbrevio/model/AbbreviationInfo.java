@@ -10,6 +10,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.DynamicInsert;
 
 /**
  * The AbbreviationInfo class is an entity which represents specific chemical abbreviation.
@@ -35,4 +36,6 @@ public class AbbreviationInfo {
     private Double em;
     private String inchi;
     private String smiles;
+    private String svg;
+    private String condition;
 }

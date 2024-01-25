@@ -41,4 +41,8 @@ public class AbbreviationInfoService {
                     () -> unidentifiedAbbreviation.add(abbr));
         }
     }
+
+    public AbbreviationInfo addAbbreviation(AbbreviationInfo newRecord) {
+        return molRepository.save(newRecord);
+    }
 }
