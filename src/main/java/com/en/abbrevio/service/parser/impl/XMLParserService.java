@@ -35,7 +35,7 @@ public class XMLParserService implements ParserService<String, String> {
             Map<BoundingBox, String> abbreviations = moleculeAbbreviationHandler.getAbbreviations();
 
             if (stepArrowBounds.isEmpty() || abbreviations.isEmpty()) {
-                throw new ParsingException("nothing to identify");
+                throw new ParsingException("nothing to identify! ");
             }
             List<ReactionStep<String>> reactionSteps = new ArrayList<>(stepArrowBounds.size());
             Iterator<BoundingBox> iterator = stepArrowBounds.iterator();

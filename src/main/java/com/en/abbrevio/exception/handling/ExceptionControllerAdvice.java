@@ -17,7 +17,7 @@ public class ExceptionControllerAdvice {
 
     @ExceptionHandler
     public ResponseEntity<ErrorDetails> handleDuplicateKeyOrUniqueConstraintsException(DataIntegrityViolationException e) {
-        ErrorDetails errorDetails = new ErrorDetails(ErrorCode.DuplicateRecordError.getErrorMessage(), ErrorCode.DuplicateRecordError.getErrorCode());
+        ErrorDetails errorDetails = new ErrorDetails(ErrorCode.DuplicateRecordError.getErrorMessage() + "\s".repeat(5) + e.getMessage(), ErrorCode.DuplicateRecordError.getErrorCode());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(errorDetails);
     }
 }

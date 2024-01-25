@@ -28,14 +28,14 @@ public class AbbreviationInfo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column(nullable = false)
-    private String name;
+    private String synonym;
     private String formula;
     @Column(nullable = false)
     private Double mw;
-    @Column(nullable = false)
     private Double em;
     private String inchi;
     private String smiles;
-    private String svg;
+    private String structure;
     private String condition;
+    private String name;
 }

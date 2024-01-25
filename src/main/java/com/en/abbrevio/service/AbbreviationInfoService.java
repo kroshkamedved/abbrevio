@@ -36,7 +36,7 @@ public class AbbreviationInfoService {
 
     private void fullfillStepPart(List<String> abbreviations, List<AbbreviationInfo> resultList, List<String> unidentifiedAbbreviation) {
         for (String abbr : abbreviations) {
-            Optional<AbbreviationInfo> currentMolecule = molRepository.getByName(abbr.toUpperCase());
+            Optional<AbbreviationInfo> currentMolecule = molRepository.getBySynonym(abbr.toUpperCase());
             currentMolecule.ifPresentOrElse(resultList::add,
                     () -> unidentifiedAbbreviation.add(abbr));
         }

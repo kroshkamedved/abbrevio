@@ -17,12 +17,13 @@
             <column name="formula" type="varchar(255)"/>
             <column name="inchi" type="varchar(255)"/>
             <column name="mw" type="double"/>
-            <column name="name" type="varchar(255)">
+            <column name="synonym" type="varchar(255)">
                 <constraints nullable="false" unique="true"/>
             </column>
             <column name="smiles" type="varchar(255)"/>
-            <column name="svg" type="text"/>
+            <column name="structure" type="text"/>
             <column name="condition" type="varchar(255)"/>
+            <column name="name" type="varchar(255)"/>
         </createTable>
     </changeSet>
     <changeSet id="2" author="">
@@ -30,25 +31,21 @@
             <column name="em" valueNumeric="129.1517496151"/>
             <column name="formula" value="C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;19&lt;/sub&gt;N"/>
             <column name="inchi" value="1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3"/>
-            <column name="mw" valueNumeric="129.2470000014"/>
-            <column name="name" value="DIPEA"/>
+            <column name="mw" valueNumeric="129.2470000014">
+                <constraints nullable="false"/>
+            </column>
+            <column name="synonym" value="DIPEA"/>
             <column name="smiles" value="CCN(C(C)C)C(C)C"/>
+            <column name="name" value="N,N-Diisopropylethylamine"/>
         </insert>
         <insert tableName="abbreviation_info">
             <column name="em" valueNumeric="60.05"/>
             <column name="formula" value="C&lt;sub&gt;2&lt;/sub&gt;H&lt;sub&gt;4&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;"/>
             <column name="inchi" value="1S/C2H4O2/c1-2(3)4/h1H3,(H,3,4)&#10;"/>
             <column name="mw" valueNumeric="60.05"/>
-            <column name="name" value="AA"/>
+            <column name="synonym" value="AA"/>
             <column name="smiles" value="CC(O)=O"/>
-        </insert>
-        <insert tableName="abbreviation_info">
-            <column name="em" valueNumeric="129.1517496151"/>
-            <column name="formula" value="&quot;C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;19&lt;/sub&gt;N&quot;"/>
-            <column name="inchi" value="&quot;1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3&quot;"/>
-            <column name="mw" valueNumeric="129.2470000014"/>
-            <column name="name" value="FGR"/>
-            <column name="smiles" value="&quot;CCN(C(C)C)C(C)C&quot;"/>
+            <column name="name" value="acetic acid"/>
         </insert>
     </changeSet>
 </databaseChangeLog>

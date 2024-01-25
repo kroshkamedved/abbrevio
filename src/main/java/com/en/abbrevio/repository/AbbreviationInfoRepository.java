@@ -8,5 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface AbbreviationInfoRepository extends JpaRepository<AbbreviationInfo, Long> {
-    Optional<AbbreviationInfo> getByName(String name);
+    Optional<AbbreviationInfo> getBySynonym(String synonym);
 }
