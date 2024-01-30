@@ -72,9 +72,9 @@ public class XMLParserService implements ParserService<String, String> {
             if (currentAbbreviationBounds.getMinX() < currentArrow.getMinX()) {
                 currentStep.getReactants().add(entry.getValue());
             } else if (currentAbbreviationBounds.getMinX() > currentArrow.getMinX() && currentAbbreviationBounds.getMinX() < currentArrow.getMaxX()) {
-                currentStep.getReactants().add(entry.getValue());
+                currentStep.getReagents().add(entry.getValue());
             } else {
-                currentStep.getReactants().add(entry.getValue());
+                currentStep.getProducts().add(entry.getValue());
             }
         }
         return currentStep;
