@@ -10,9 +10,8 @@ import java.util.List;
 /**
  * The ResponseTO class is a response transfer object that encapsulates the microservice response data.
  */
-//TODO rename
 @Getter
-public class ResponseTO {
+public class ReactionSchemaTO {
 
     private final List<ReactionStep<AbbreviationInfo>> steps = new ArrayList<>();
 

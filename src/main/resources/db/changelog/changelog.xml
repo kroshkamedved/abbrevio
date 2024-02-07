@@ -24,6 +24,7 @@
             <column name="structure" type="text"/>
             <column name="condition" type="varchar(255)"/>
             <column name="name" type="varchar(255)"/>
+            <column name="cas" type="varchar(255)"/>
         </createTable>
     </changeSet>
     <changeSet id="2" author="">

@@ -1,6 +1,6 @@
 package com.en.abbrevio.service;
 
-import com.en.abbrevio.dto.ResponseTO;
+import com.en.abbrevio.dto.ReactionSchemaTO;
 import com.en.abbrevio.model.AbbreviationInfo;
 import com.en.abbrevio.model.ReactionStep;
 import com.en.abbrevio.repository.AbbreviationInfoRepository;
@@ -17,15 +17,15 @@ public class AbbreviationInfoService {
     private final ParserService<String, String> parserService;
     private final AbbreviationInfoRepository molRepository;
 
-    public ResponseTO parseCDXML(String xml) {
+    public ReactionSchemaTO parseCDXML(String xml) {
         List<ReactionStep<String>> moleculesAbbreviations = parserService.parse(xml);
-        ResponseTO responseTO = new ResponseTO();
+        ReactionSchemaTO reactionSchemaTO = new ReactionSchemaTO();
         for (ReactionStep<String> step : moleculesAbbreviations) {
             ReactionStep<AbbreviationInfo> currentStep = new ReactionStep<>();
             fullFillStep(step, currentStep);
-            responseTO.addReactionStep(currentStep);
+            reactionSchemaTO.addReactionStep(currentStep);
         }
-        return responseTO;
+        return reactionSchemaTO;
     }
 
     private void fullFillStep(ReactionStep<String> abbreviations, ReactionStep<AbbreviationInfo> currentStep) {

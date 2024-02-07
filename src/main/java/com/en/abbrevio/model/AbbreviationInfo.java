@@ -38,4 +38,5 @@ public class AbbreviationInfo {
     private String structure;
     private String condition;
     private String name;
+    private String cas;
 }

@@ -1,6 +1,6 @@
 package com.en.abbrevio.service;
 
-import com.en.abbrevio.dto.ResponseTO;
+import com.en.abbrevio.dto.ReactionSchemaTO;
 import com.en.abbrevio.service.parser.XMLParserTestCofiguration;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -31,9 +31,9 @@ public class AbbreviationInfoServiceTest {
         URL requestUrl = getClass().getClassLoader().getResource("request_body_example.xml");
         String expectedResult = Files.readString(Paths.get(responceUrl.toURI()));
         String parsingSource = Files.readString(Paths.get(requestUrl.toURI()));
-        ResponseTO responseTO = abbreviationInfoService.parseCDXML(parsingSource);
+        ReactionSchemaTO reactionSchemaTO = abbreviationInfoService.parseCDXML(parsingSource);
         Gson gson = new GsonBuilder().serializeNulls().disableHtmlEscaping().create();
-        String obtainedParseResultJson = gson.toJson(responseTO);
+        String obtainedParseResultJson = gson.toJson(reactionSchemaTO);
         Assertions.assertEquals(expectedResult, obtainedParseResultJson);
     }
 }

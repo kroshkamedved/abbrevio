@@ -1,10 +1,9 @@
 package com.en.abbrevio.controller;
 
-import com.en.abbrevio.dto.ResponseTO;
+import com.en.abbrevio.dto.ReactionSchemaTO;
 import com.en.abbrevio.model.AbbreviationInfo;
 import com.en.abbrevio.service.AbbreviationInfoService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -27,8 +26,8 @@ public class AbbreviationInfoController {
 
 
     @PostMapping(path = "seek", consumes = MediaType.APPLICATION_XML_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ResponseTO> parseCDXML(@RequestBody String xml) {
-        ResponseTO response = molService.parseCDXML(xml);
+    public ResponseEntity<ReactionSchemaTO> parseCDXML(@RequestBody String xml) {
+        ReactionSchemaTO response = molService.parseCDXML(xml);
         return ResponseEntity.status(HttpStatus.OK).body(response);
     }
 
