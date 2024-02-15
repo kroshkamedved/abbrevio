@@ -9,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.NoSuchElementException;
 import java.util.Optional;
 
 @Service
@@ -44,5 +45,9 @@ public class AbbreviationInfoService {
 
     public AbbreviationInfo addAbbreviation(AbbreviationInfo newRecord) {
         return molRepository.save(newRecord);
+    }
+
+    public AbbreviationInfo getBySynonym(String synonym) {
+        return molRepository.getBySynonym(synonym).orElseThrow();
     }
 }

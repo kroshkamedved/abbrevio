@@ -8,9 +8,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -37,9 +39,15 @@ public class AbbreviationInfoController {
      * @param newRecord AbbreviationInfo class entity in json presentation
      * @return created AbbreviationInfo if record was successfully saved to the DB
      */
-    @PostMapping(path = "/add", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(path = "add", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<AbbreviationInfo> addAbbreviation(@RequestBody AbbreviationInfo newRecord) {
         AbbreviationInfo savedRecord = molService.addAbbreviation(newRecord);
         return ResponseEntity.status(HttpStatus.OK).body(savedRecord);
+    }
+
+    @GetMapping(path = "seekBySynonym", params = ("synonym"))
+    public ResponseEntity<AbbreviationInfo> getBySynonym(@RequestParam String synonym) {
+        AbbreviationInfo responseBody = molService.getBySynonym(synonym.toUpperCase());
+        return ResponseEntity.status(HttpStatus.OK).body(responseBody);
     }
 }
