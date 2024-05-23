@@ -16,7 +16,9 @@
             <column name="em" type="double"/>
             <column name="formula" type="varchar(255)"/>
             <column name="inchi" type="varchar(255)"/>
-            <column name="mw" type="double"/>
+            <column name="mw" type="double">
+                <constraints nullable="false"/>
+            </column>
             <column name="synonym" type="varchar(255)">
                 <constraints nullable="false" unique="true"/>
             </column>
@@ -25,6 +27,7 @@
             <column name="condition" type="varchar(255)"/>
             <column name="name" type="varchar(255)"/>
             <column name="cas" type="varchar(255)"/>
+            <column name="density" type="double"/>
         </createTable>
     </changeSet>
     <changeSet id="2" author="">
@@ -32,12 +35,12 @@
             <column name="em" valueNumeric="129.1517496151"/>
             <column name="formula" value="C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;19&lt;/sub&gt;N"/>
             <column name="inchi" value="1S/C8H19N/c1-6-9(7(2)3)8(4)5/h7-8H,6H2,1-5H3"/>
-            <column name="mw" valueNumeric="129.2470000014">
-                <constraints nullable="false"/>
-            </column>
+            <column name="mw" valueNumeric="129.2470000014"/>
             <column name="synonym" value="DIPEA"/>
             <column name="smiles" value="CCN(C(C)C)C(C)C"/>
             <column name="name" value="N,N-Diisopropylethylamine"/>
+            <column name="density" valueNumeric="0.742"/>
+            <column name="condition" value="LIQUID"/>
         </insert>
         <insert tableName="abbreviation_info">
             <column name="em" valueNumeric="60.05"/>
@@ -47,6 +50,8 @@
             <column name="synonym" value="AA"/>
             <column name="smiles" value="CC(O)=O"/>
             <column name="name" value="acetic acid"/>
+            <column name="density" valueNumeric="1.049"/>
+            <column name="condition" value="LIQUID"/>
         </insert>
     </changeSet>
 </databaseChangeLog>

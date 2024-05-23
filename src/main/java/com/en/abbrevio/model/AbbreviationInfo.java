@@ -39,4 +39,5 @@ public class AbbreviationInfo {
     private String condition;
     private String name;
     private String cas;
+    private Double density;
 }
