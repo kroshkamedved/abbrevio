@@ -15,6 +15,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+import java.util.Set;
+
 /**
  * The AbbreviationController class is the REST controller that provides the functionality to analyse
  * abbreviation presented in the reaction scheme, recognise them, and retrieve corresponding data about abbreviation from database.
@@ -48,6 +51,12 @@ public class AbbreviationInfoController {
     @GetMapping(path = "seekBySynonym", params = ("synonym"))
     public ResponseEntity<AbbreviationInfo> getBySynonym(@RequestParam String synonym) {
         AbbreviationInfo responseBody = molService.getBySynonym(synonym.toUpperCase());
+        return ResponseEntity.status(HttpStatus.OK).body(responseBody);
+    }
+
+    @GetMapping("getAll")
+    public ResponseEntity<List<AbbreviationInfo>> getAll() {
+        List<AbbreviationInfo> responseBody = molService.getAll();
         return ResponseEntity.status(HttpStatus.OK).body(responseBody);
     }
 }

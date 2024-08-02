@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -49,5 +50,9 @@ public class AbbreviationInfoService {
 
     public AbbreviationInfo getBySynonym(String synonym) {
         return molRepository.getBySynonym(synonym).orElseThrow();
+    }
+
+    public List<AbbreviationInfo> getAll() {
+        return molRepository.findAll();
     }
 }
